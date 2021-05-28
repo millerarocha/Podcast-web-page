@@ -1,0 +1,519 @@
+@font-face {
+    font-family: IBMPlexMono;
+    src: url(./fonts/IBMPlexMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: IBMPlexMono-Medium;
+    src: url(./fonts/IBMPlexMono-Medium.ttf);
+}
+
+@font-face {
+    font-family: IBMPlexSans;
+    src: url(./fonts/IBMPlexSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: IBMPlexSans-SemiBold;
+    src: url(./fonts/IBMPlexSans-SemiBold.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    font-size: 10px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Barra de navegación - Navbar */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar_padding{
+    padding: 1% 7%;
+}
+
+.navbar__img{
+    width: 36px;
+}
+
+.navbar__menu{
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.navbar__option{
+    font-family: IBMPlexMono;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #060A24;
+    list-style: none;
+    margin-left: 48px;
+}
+
+.navbar__link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar__link:hover{
+    color: #00F3BB;
+    text-decoration:line-through;
+    transition: all 0.3s ease;
+}
+
+.navbar__link:active{
+    color: rgba(6, 10, 36,0.56);
+    font-weight: 400;
+    text-decoration: none;   
+}
+
+/* Header principal - Header */
+
+.header{
+    padding: 6% 14% 2% 14%;
+}
+
+/* Estilos titulos - titles */
+
+.title{
+    font-family: IBMPlexSans;
+    color: #060A24;  
+}
+
+.title_size-large{
+    font-size: 6.4rem;
+}
+
+.title_size-medium{
+    font-size: 4.8rem;
+    font-weight: 300;
+}
+
+.title_line-through{
+    text-decoration: line-through;
+}
+
+.title_blue-color{
+    color: #0000EC;
+}
+
+.title_color-white{
+    color: #FFFFFF;
+}
+
+/* Estilos textos - text */
+
+.text{
+    font-family: IBMPlexMono;
+    font-size: 1.6rem;
+    color: #060A24; 
+}
+
+.text_medium-width{
+    width: 628px;    
+}
+
+.text_small-width{
+    width: 464px;     
+}
+
+.text_small-margin{
+    margin: 10px 0;
+}
+
+/* Boton principal - Button */
+
+.button{    
+    background: linear-gradient(225deg,#00F0B8,#00F0B8);; 
+    padding: 16px 59px; 
+    border: none;
+    display: inline-block;
+}
+
+.button__text{
+    font-family: IBMplexMono-Medium;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: inherit; 
+}
+
+.button_margin-lg{
+    margin-top: 56px;
+}
+
+.button_margin-md{
+    margin-top: 36px;
+}
+
+.button:hover{    
+    background: linear-gradient(225deg,#0000FE,#00F0B8);
+    color: #ffffff;    
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Sección Episodios - podcasts */
+
+.podcasts{  
+    padding: 3% 0 8% 0;      
+    background: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+}
+
+.podcasts__title-container{
+    padding: 6% 14% 2% 14%;
+}
+
+.podcasts__container{
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: space-around;
+    margin: 0 7% 0 7%;
+}
+
+.podcasts__iframe{    
+    width: 40%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+/* Sección Nosotros - about-us */
+
+.about-us{
+    display: flex;
+    padding: 6% 14% 2% 14%;
+    margin-bottom: 12%;
+}
+
+.about-us__img-container{
+    position: relative;
+    width: 50%;
+}
+
+.about-us__img{    
+    width: 80%;
+    position: absolute;
+    top: -180px;
+}
+
+/* Sección entrevistas - Interviews */
+
+.interviews{
+    margin-top: 10%;
+}
+
+.interviews__title-container{
+    padding: 4% 14% 2% 14%;
+}
+
+.photo-gallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photo-gallery__image{    
+    width: 33.3%;
+    height: 9.3%;       
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+/* Sección tópicos - topics */
+
+.topics__title-container{
+    padding: 4% 14% 2% 14%;
+}
+
+.topics__cards-container{
+    padding: 2% 14% 2% 14%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15.4%;
+}
+
+.card__image{
+    width: 80%;
+    margin-bottom: 5%;
+}
+
+.card__text{
+    font-family: IBMPlexSans-SemiBold;
+    font-size: 2rem;
+    color: #060A24;
+    letter-spacing: 0;
+    text-align: center;
+    margin-top: 2%;    
+}
+
+/* Sección Novedades - news */
+
+.news{
+    margin: 0 auto;
+    background: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+    padding: 10% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+/* Pie de página - Footer */
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 7%;
+}
+
+.footer__icons{    
+    display: inline-flex;
+    justify-content: space-between
+}
+
+.footer__icon{
+    list-style: none;
+    font-size: 1.8rem;
+    margin-left: 36px;
+    cursor: pointer;
+}
+
+.footer__icon:hover{
+    transform: scaleY(1.2) scaleX(1.2);
+    animation: 1s linear ease;
+}
+
+/* Media queries */
+
+@media screen and (min-width: 1600px) {
+    
+    /* Sección nosotros */
+
+    .about-us{
+        margin-bottom: 18%;
+    }
+
+    .about-us__img{    
+        top: -200px;
+    }
+  }
+
+@media (max-width: 1279px) and (min-width: 769px) {
+    body {
+      background-color: lightblue;
+    }
+    :root{
+        font-size: 8px;
+    }
+
+    /* Sección nosotros */
+
+    .about-us{
+        margin-bottom: 5%;
+    }
+
+    .about-us__img{    
+        top: -100px;
+    }
+
+    .text_small-width{
+        width: 350px;     
+    }
+}
+
+@media (max-width: 768px) {
+    
+    body {
+      background-color: grey;
+    }
+    :root{
+        font-size: 10px;
+    }
+
+    /* Barra de navegación - Navbar */
+    .navbar{
+        display: none;
+    }
+
+    /* Header principal - Header */
+
+    .header{
+        padding: 2% 5%;
+        display: flex; 
+        flex-direction: column; 
+        justify-content: space-between;  
+    }
+
+    /* Estilos titulos - titles */
+
+    .title_size-large{
+        font-size: 3.6rem;
+    }
+
+    .title_size-medium{
+        font-size: 3.6rem;
+        font-weight: 300;
+    }
+
+    /* Estilos textos - text */
+
+    .text{
+        font-size: 1.4rem;
+    }
+
+    .text_medium-width{
+        width: 100%;    
+    }
+
+    .text_small-width{
+        width: 100%;     
+    }
+
+    .text_small-margin{
+        margin: 0;
+    }
+
+    /* Boton principal - Button */
+
+    .button_margin-lg{
+        margin-top: 36px;
+    }
+
+    /* Sección Episodios - podcasts */
+    .podcasts{  
+        padding: 6% 0 8% 0;
+        clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);      
+    }
+    .podcasts__container{
+        display: flex;
+        flex-direction: column;  
+        justify-content: space-around;
+        margin: 0 7% 0 7%;
+    }
+
+    .podcasts__iframe{    
+        width: 100%;
+        margin-top: 1%;
+        margin-bottom: 2%;
+    }
+
+    /* Sección Nosotros - about-us */
+
+    .about-us{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .about-us__img-container{
+        position: relative;
+        width: 100%;
+    }
+
+    .about-us__img{    
+        width: 100%;
+        position: absolute;
+        top: -90px;
+    }
+
+    .about-us__text-container{
+        margin-top: 400px;
+    }
+
+    /* Sección entrevistas - Interviews */
+
+    .interviews{
+        margin-top: 10%;
+    }
+
+    .interviews__title-container{
+        padding: 4% 14% 2% 14%;
+    }
+
+    .photo-gallery{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .photo-gallery__image{    
+        width: 100%;
+    }
+    /* Sección tópicos - topics */
+
+    .topics__title-container{
+        padding: 4% 14% 2% 14%;
+    }
+
+    .topics__cards-container{
+        padding: 2% 14% 2% 14%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 25px 0;
+    }
+
+    .card__image{
+        width: 60%;
+        margin-bottom: 5%;
+    }
+
+    .card__text{        
+        font-size: 2.4rem;    
+    }
+    /* Sección Novedades - news */
+
+    .news{
+        margin: 0 auto;
+        clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+        padding: 10% 0;
+    }
+
+    /* Pie de página - Footer */
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2% 7%;
+    }
+
+    .footer__icons{    
+        display: inline-flex;
+        width: 80%;
+    }
+
+    .footer__icon{
+        list-style: none;
+        font-size: 1.8rem;
+        cursor: pointer;
+        margin-left: 0;
+    }
+
+
+}
