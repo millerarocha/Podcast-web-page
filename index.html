@@ -13,16 +13,32 @@
     <nav class="navbar navbar_padding">
         <img src="./assets/imgs/logo.svg" alt="logo podcast" class="navbar__img">
         <ul class="navbar__menu">
-            <li class="navbar__option"><a href="" class="navbar__link">EPISODIOS</a></li>
-            <li class="navbar__option"><a href="" class="navbar__link">NOSOTROS</a></li>
-            <li class="navbar__option"><a href="" class="navbar__link">ENTREVISTAS</a></li>
-            <li class="navbar__option"><a href="" class="navbar__link">TÓPICOS</a></li>
+            <li class="navbar__option"><a href="#podcasts" class="navbar__link">EPISODIOS</a></li>
+            <li class="navbar__option"><a href="#about-us" class="navbar__link">NOSOTROS</a></li>
+            <li class="navbar__option"><a href="#interviews" class="navbar__link">ENTREVISTAS</a></li>
+            <li class="navbar__option"><a href="#topics" class="navbar__link">TÓPICOS</a></li>
         </ul>
+        <div class="navbar__menu-toggle">
+            <input type="checkbox" id="menu-toggle" class="navbar__menu-checkbox">
+            <label for="menu-toggle">
+                <div class="navbar__menu-lines"></div>
+                <div class="navbar__menu-lines"></div>
+                <div class="navbar__menu-lines"></div>
+            </label>
+            <div class="mobile-navbar">
+                <ul class="mobile-navbar__menu">
+                    <li class="mobile-navbar__option"><a href="#podcasts" class="mobile-navbar__link">EPISODIOS</a></li>
+                    <li class="mobile-navbar__option"><a href="#about-us" class="mobile-navbar__link">NOSOTROS</a></li>
+                    <li class="mobile-navbar__option"><a href="#interviews" class="mobile-navbar__link">ENTREVISTAS</a></li>
+                    <li class="mobile-navbar__option"><a href="#topics" class="mobile-navbar__link">TÓPICOS</a></li>
+                </ul>
+            </div>
+        </div>        
     </nav>
 
     <!-- Header principal - Header -->
     <header class="header">
-        <h1 class="title title_size-large">Hello <span class="title_line-through">world</span> pale blue dot<span class="title_blue-color">.</span></h1>
+        <h1 class="title title_size-large title_desktop-margin">Hello <span class="title_line-through">world</span> pale blue dot<span class="title_blue-color">.</span></h1>
         <p class="text text_medium-width">El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.</p>
         <div class="button button_margin-lg">            
             <a href="#" class="button__text">CONOCE MÁS</a>
@@ -30,7 +46,7 @@
     </header>
 
     <!-- Seccion Episodios - podcasts -->
-    <section class="podcasts">
+    <section id="podcasts" class="podcasts">
         <div class="podcasts__title-container">
             <h2 class="title title_size-medium title_color-white">Episodios</h2>
         </div>
@@ -44,7 +60,7 @@
 
     <!-- Sección nosotros - about-us -->
 
-    <section class="about-us">
+    <section id="about-us" class="about-us">
         <div class="about-us__img-container">
             <img class="about-us__img" src="./assets/imgs/phone.png" alt="cellphone image">
         </div>
@@ -57,7 +73,7 @@
     </section>
 
     <!-- Sección Entrevistas - interviews -->
-    <section class="interviews">
+    <section id="interviews" class="interviews">
         <div class="interviews__title-container">
             <h2 class="title title_size-medium">Invitadas/os estelares</h2>
         </div>
@@ -72,7 +88,7 @@
     </section>
 
     <!-- Sección tópicos - topics -->
-    <section class="topics">
+    <section id="topics" class="topics">
         <div class="topics__title-container">
             <h2 class="title title_size-medium">Algunos de nuestros temas</h2>
         </div>
@@ -106,8 +122,8 @@
 
     <!-- Pie de página - Footer -->
     <footer class="footer">
-        <p class="text">&copy 2019 - Hello blue pale dot</p>
-        <ul class="footer__icons">
+        <p class="text text_mobile-margin">&copy 2019 - Hello blue pale dot</p>
+        <ul class="footer__icons text_mobile-margin">
             <li class="footer__icon"><i class="fab fa-spotify"></i></li>
             <li class="footer__icon"><i class="fab fa-instagram"></i></li>
             <li class="footer__icon"><i class="fab fa-twitter"></i></li>
