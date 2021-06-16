@@ -308,8 +308,14 @@ body{
 }
 
 .footer__icon:hover{
+    color: #00F0B8;
     transform: scaleY(1.2) scaleX(1.2);
     animation: 1s linear ease;
+}
+
+.footer__icon-link{    
+    text-decoration: none;
+    color: inherit;
 }
 
 /* Media queries */
